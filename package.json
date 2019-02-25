@@ -11,10 +11,10 @@
     "url": "git+https://github.com/kube-js/semantic-release.git"
   },
   "bin": {
-    "semantic-release-public-circleci-app": "./scripts/public-circleci-app",
-    "semantic-release-public-circleci-lib": "./scripts/public-circleci-lib",
-    "semantic-release-public-jenkins-app": "./scripts/public-jenkins-app",
-    "semantic-release-public-jenkins-lib": "./scripts/public-jenkins-lib"
+    "semantic-release-public-circleci-app": "./scripts/public-circleci-app.js",
+    "semantic-release-public-circleci-lib": "./scripts/public-circleci-lib.js",
+    "semantic-release-public-jenkins-app": "./scripts/public-jenkins-app.js",
+    "semantic-release-public-jenkins-lib": "./scripts/public-jenkins-lib.js"
   },
   "author": "Mariusz Rajczakowski <mariuszrajczakowski@pm.me> (http://mariuszrajczakowski.me)",
   "license": "MIT",
