@@ -4,7 +4,7 @@
   "description": "Semantic release scripts",
   "main": "index.js",
   "scripts": {
-    "semantic-release": "./scripts/public-circleci-lib.js"
+    "semantic-release": "node ./scripts/public-circleci-lib.js"
   },
   "repository": {
     "type": "git",
