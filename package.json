@@ -1,0 +1,25 @@
+{
+  "name": "@kube-js/semantic-release",
+  "version": "0.0.0-development",
+  "description": "Semantic release scripts",
+  "main": "index.js",
+  "scripts": {
+    "semantic-release": "./scripts/public-circleci-lib.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kube-js/semantic-release.git"
+  },
+  "bin": {
+    "semantic-release-public-circleci-app": "./scripts/public-circleci-app",
+    "semantic-release-public-circleci-lib": "./scripts/public-circleci-lib",
+    "semantic-release-public-jenkins-app": "./scripts/public-jenkins-app",
+    "semantic-release-public-jenkins-lib": "./scripts/public-jenkins-lib"
+  },
+  "author": "Mariusz Rajczakowski <mariuszrajczakowski@pm.me> (http://mariuszrajczakowski.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kube-js/semantic-release/issues"
+  },
+  "homepage": "https://github.com/kube-js/semantic-release#readme"
+}

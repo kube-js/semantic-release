@@ -1,0 +1,29 @@
+version: 2
+machine:
+  services:
+    - docker
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.15-alpine
+    environment:
+      - NPM_CONFIG_LOGLEVEL: warn
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package-lock.json" }}
+      - run:
+          name: installing Dependencies
+          command: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
+      - deploy:
+          name: semantic Release
+          command: npm run semantic-release
