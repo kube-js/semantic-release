@@ -1,1 +1,27 @@
 #!/usr/bin/env node
+const path = require('path');
+const semanticRelease = require('../utils/semanticRelease');
+const package = require('../utils/package');
+
+semanticRelease({
+  branch: "master",
+  verifyConditions: [
+    {
+      "path": "./node_modules/@krux/condition-jenkins"
+    },
+    "semantic-release-docker",
+    "@semantic-release/github",
+    "@semantic-release/npm"
+  ],
+  prepare: [
+    "@semantic-release/npm"
+  ],
+  publish: [
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    {
+      "path": "semantic-release-docker",
+      "name": package.name.replace(/@/g, ''),
+    }
+  ]
+});

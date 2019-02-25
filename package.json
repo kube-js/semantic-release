@@ -21,5 +21,17 @@
   "bugs": {
     "url": "https://github.com/kube-js/semantic-release/issues"
   },
-  "homepage": "https://github.com/kube-js/semantic-release#readme"
+  "homepage": "https://github.com/kube-js/semantic-release#readme",
+  "dependencies": {
+    "@krux/condition-jenkins": "^1.0.1",
+    "@semantic-release/github": "^5.2.10",
+    "@semantic-release/npm": "^5.1.4",
+    "condition-circle": "^2.0.2",
+    "semantic-release": "^15.13.3",
+    "semantic-release-docker": "^2.1.0",
+    "simple-git": "^1.107.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
