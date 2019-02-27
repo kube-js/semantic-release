@@ -5,7 +5,7 @@ Semantic release scripts to release with the following CI:
 - circleci
 
 ## Installation:
-`npm i -D -E @kube-js/semantic-release`
+`npm i -D @kube-js/semantic-release`
 
 Credits:
-[https://github.com/ryansmith94](ryansmith94)
+[ryansmith94](https://github.com/ryansmith94)
