@@ -1,4 +1,3 @@
-const path = require("path");
 const semanticRelease = require("../utils/semanticRelease");
 const package = require("../utils/package");
 
