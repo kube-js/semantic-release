@@ -1,4 +1,3 @@
-#!/usr/local/bin/node
 const path = require("path");
 const semanticRelease = require("../utils/semanticRelease");
 const package = require("../utils/package");
@@ -19,7 +18,7 @@ semanticRelease({
     "@semantic-release/npm",
     {
       path: "semantic-release-docker",
-      name: name
+      name
     }
   ]
 });

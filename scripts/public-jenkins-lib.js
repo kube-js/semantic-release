@@ -1,4 +1,3 @@
-#!/usr/local/bin/node
 const path = require("path");
 const semanticRelease = require("../utils/semanticRelease");
 
