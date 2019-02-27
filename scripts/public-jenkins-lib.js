@@ -1,4 +1,4 @@
-const path = require("path");
+#!/usr/bin/env node
 const semanticRelease = require("../utils/semanticRelease");
 
 semanticRelease({
